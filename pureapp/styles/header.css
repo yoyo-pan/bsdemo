@@ -1,0 +1,34 @@
+/*
+  xs: 360,
+  sm: 768,
+  md: 1024,
+  lg: 1280,
+  xl: 1440
+*/
+.Header {
+  height: 44px;
+  text-align: center;
+  background-color: #cd0505;
+}
+.Header-item {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .Header {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Header-item {
+    width: 93px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .Header-item {
+    width: 111px;
+  }
+}
