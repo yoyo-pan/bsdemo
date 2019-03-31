@@ -2,9 +2,13 @@
 
 Business Weekly demo project
 
+### example
+
+React 以前寫過的小部分範例
+
 ### app
 
-React + Material ui
+React + Material ui(google 出的 style 套件)
 
 ### pureapp
 
