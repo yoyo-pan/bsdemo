@@ -28,14 +28,21 @@ class App extends Component<IAppProps> {
   }
 
   renderBody() {
-    return <ArticleList />;
+    const { classes } = this.props;
+
+    return (
+      <div className={classes.body}>
+        <ArticleList />
+      </div>
+    );
   }
+
   render() {
     const { classes } = this.props;
 
     return (
       <MuiThemeProvider theme={theme}>
-        <div>
+        <div className={classes.app}>
           {this.renderHeader()}
           {this.renderBody()}
         </div>

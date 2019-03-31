@@ -23,7 +23,11 @@ class Header extends Component<IHeaderProps> {
         justify="center"
       >
         {headers.map(item => {
-          return <div className={classes.item}>{item}</div>;
+          return (
+            <div key={item} className={classes.item}>
+              {item}
+            </div>
+          );
         })}
       </Grid>
     );

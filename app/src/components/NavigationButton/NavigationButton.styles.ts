@@ -6,13 +6,15 @@ export default ({ spacing, breakpoints }: Theme) =>
     btn: {
       boxShadow: '0 2px 10px 0 rgba(37, 37, 37, 0.15)',
       backgroundColor: '#ffffff',
-      [breakpoints.up('lg')]: {
-        width: 160,
-        height: 40
-      },
-      [breakpoints.up('sm')]: {
+      borderRadius: 25,
+      marginTop: 20,
+      [breakpoints.up('xs')]: {
         width: 96,
         height: 44
+      },
+      [breakpoints.up('md')]: {
+        width: 160,
+        height: 40
       }
     }
   });

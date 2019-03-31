@@ -11,11 +11,11 @@ export default ({ spacing, breakpoints, colors }: Theme) =>
     item: {
       fontSize: 15, // todo: sync with font-family
       color: '#ffffff',
-      [breakpoints.up('lg')]: {
-        width: 111
-      },
       [breakpoints.up('md')]: {
         width: 93
+      },
+      [breakpoints.up('lg')]: {
+        width: 111
       }
     }
   });
